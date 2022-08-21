@@ -3,11 +3,12 @@
 document.getElementById("calculate-btn").addEventListener("click", function () {
   const totalPlayer = cartArray.length;
   const perPlayerCost = getInputById("per-palyer-field");
-
+  //error handiling
   if (isNaN(perPlayerCost)) {
     alert("Enter Valid Amount");
     return;
   }
+  //calculation
   const totalPlayerCost = totalPlayer * perPlayerCost;
 
   const playerExpenses = getTextElementById("player-expenses");
@@ -20,6 +21,8 @@ document
   .addEventListener("click", function () {
     const managerCost = getInputById("manager-cost");
     const coachCost = getInputById("coach-cost");
+
+    //error handiling
     if (isNaN(managerCost)) {
       alert("Enter Valid manager cost");
       return;
@@ -28,7 +31,7 @@ document
       alert("Enter Valid coach cost");
       return;
     }
-
+    //calculation
     const totalStaffCost = managerCost + coachCost;
     const totalPlayerExpance = document.getElementById("player-expenses");
     const totalPlayerCostString = totalPlayerExpance.innerText;
