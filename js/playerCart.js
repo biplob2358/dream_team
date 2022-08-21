@@ -21,6 +21,7 @@ function diplayPlayer(cartPlayers) {
     tableBody.appendChild(tr);
   }
 }
+
 //onclick function
 function selectBtn(element) {
   const palyerName = element.parentNode.parentNode.children[0].innerText;

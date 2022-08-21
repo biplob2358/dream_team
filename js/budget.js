@@ -1,3 +1,5 @@
+//calculate button
+
 document.getElementById("calculate-btn").addEventListener("click", function () {
   const totalPlayer = cartArray.length;
   const perPlayerCost = getInputById("per-palyer-field");
@@ -12,6 +14,7 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
   playerExpenses.innerText = totalPlayerCost;
 });
 
+// total  calculation button
 document
   .getElementById("calculate-total-btn")
   .addEventListener("click", function () {

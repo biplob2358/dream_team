@@ -1,3 +1,4 @@
+// take value from input field function
 function getInputById(inputId) {
   const inputFieldElement = document.getElementById(inputId);
 
@@ -8,6 +9,7 @@ function getInputById(inputId) {
   return inputFieldValue;
 }
 
+// take value from text field function
 function getTextElementById(elementId) {
   const textElement = document.getElementById(elementId);
   return textElement;
