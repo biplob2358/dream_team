@@ -4,6 +4,11 @@ const cartArray = [];
 function selectBtn(element) {
   const palyerName = element.parentNode.parentNode.children[0].innerText;
   element.disabled = true;
+  if (cartArray.length >= 5) {
+    element.disabled = false;
+    alert("No more selection left");
+    return;
+  }
 
   const playerObj = {
     palyerName: palyerName,
@@ -15,10 +20,6 @@ function selectBtn(element) {
 //display function
 function diplayPlayer(cartPlayers) {
   const tableBody = document.getElementById("cart-player");
-  if (cartPlayers.length > 5) {
-    alert("No more selection left");
-    return;
-  }
 
   tableBody.innerHTML = "";
 
