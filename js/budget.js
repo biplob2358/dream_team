@@ -1,11 +1,14 @@
 //calculate button
 
 document.getElementById("calculate-btn").addEventListener("click", function () {
+  if (cartArray.length > 5) {
+    cartArray.length = 5;
+  }
   const totalPlayer = cartArray.length;
   const perPlayerCost = getInputById("per-palyer-field");
   //error handiling
   if (isNaN(perPlayerCost)) {
-    alert("Enter per player cost");
+    alert("Enter per player const");
     return;
   }
   //calculation

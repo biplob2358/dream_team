@@ -14,12 +14,11 @@ function selectBtn(element) {
 
 //display function
 function diplayPlayer(cartPlayers) {
+  const tableBody = document.getElementById("cart-player");
   if (cartPlayers.length > 5) {
     alert("No more selection left");
     return;
   }
-
-  const tableBody = document.getElementById("cart-player");
 
   tableBody.innerHTML = "";
 
