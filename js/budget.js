@@ -5,7 +5,7 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
   const perPlayerCost = getInputById("per-palyer-field");
   //error handiling
   if (isNaN(perPlayerCost)) {
-    alert("Enter Valid Amount");
+    alert("Enter per player cost");
     return;
   }
   //calculation
